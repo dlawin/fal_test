@@ -16,27 +16,34 @@ import faldbt.version as version
 
 class FireEventLogger:
     def test(self, msg: str, *args, **kwargs):
-        fire_event(TestMessage(_prepare_msg(msg, *args, **kwargs)))
+        1==1
+        # fire_event(TestMessage(_prepare_msg(msg, *args, **kwargs)))
 
     def trace(self, msg: str, *args, **kwargs):
+        1==1
         # Alias to test
-        return self.test(msg, *args, **kwargs)
+        # return self.test(msg, *args, **kwargs)
 
     def debug(self, msg: str, *args, **kwargs):
-        fire_event(DebugMessage(_prepare_msg(msg, *args, **kwargs)))
+        1==1
+        # fire_event(DebugMessage(_prepare_msg(msg, *args, **kwargs)))
 
     def info(self, msg: str, *args, **kwargs):
-        fire_event(InfoMessage(_prepare_msg(msg, *args, **kwargs)))
+        1==1
+        # fire_event(InfoMessage(_prepare_msg(msg, *args, **kwargs)))
 
     def warn(self, msg: str, *args, **kwargs):
-        fire_event(WarnMessage(_prepare_msg(msg, *args, **kwargs)))
+        1==1
+        # fire_event(WarnMessage(_prepare_msg(msg, *args, **kwargs)))
 
     def warning(self, msg: str, *args, **kwargs):
+        1==1
         # Alias to warn
-        return self.warn(msg, *args, **kwargs)
+        # return self.warn(msg, *args, **kwargs)
 
     def error(self, msg: str, *args, **kwargs):
-        fire_event(ErrorMessage(_prepare_msg(msg, *args, **kwargs)))
+        1==1
+        # fire_event(ErrorMessage(_prepare_msg(msg, *args, **kwargs)))
 
 
 def _prepare_msg(msg: str, *args, **kwargs):
